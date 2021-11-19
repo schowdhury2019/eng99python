@@ -13,7 +13,7 @@ film = {
     "Title": "The Dark Knight",
     "Release Year": "2008",
     "Director": "Chistopher Nolan",
-    "Actors": ("Christian Bale","Heath Ledger", "Morgan Freeman"),
+    "Actors": ("Christian Bale", "Heath Ledger", "Morgan Freeman"),
     "Genre": ("Action", "Thriller", "Crime", "Drama"),
     "Length": "153 minutes",
     "Rating": "12A"
@@ -23,3 +23,10 @@ for key, value in film.items():
     print(f"{key} : {value}")
 
 print(type(film.items()))
+
+#remove and entry
+
+film.pop("Title")
+del film["Rating"]
+
+print(film)
