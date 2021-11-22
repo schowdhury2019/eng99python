@@ -62,13 +62,14 @@ def q2c(name:str) -> int:
 
 def q3a(num):
     for i in range(1, num+1):
-        count = 1
+        is_prime = True
         for j in range(2, i+1):
-            if i%j == 0:
-                count =j
+            if i != j and i%j == 0:
+                is_prime = False
                 break
 
-        print(count)
+        if is_prime:
+            print(i)
 
 print(q3a(100))
 
