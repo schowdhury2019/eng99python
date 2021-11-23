@@ -2,46 +2,51 @@
 # Repeat
 # Yourself
 
-def multiply_numbers(args : tuple) -> int:
+def multiply_numbers(args: tuple) -> int:
     product = 1
     for i in args:
         product *= i
 
     return product
 
-def divide_by_two(num : int) -> int:
-    return num//2
+
+def divide_by_two(num: int) -> int:
+    return num // 2
+
 
 def composite(func1, func2, *args: int) -> int:
     return func2(func1(args))
 
 # print(composite(multiply_numbers,divide_by_two, 2,4,6,2))
 
-def q1a(n : int) -> [int]:
+def q1a(n: int) -> [int]:
     ans = []
-    for i in range(1,n+1):
+    for i in range(1, n + 1):
         if n % i == 0:
             ans.append(i)
     return ans
 
-def q1b(x : int,y : int) -> bool:
+
+def q1b(x: int, y: int) -> bool:
     if x == y:
         return True
     if x < y:
-        x,y = y,x
+        x, y = y, x
     if x % y == 0:
         return True
     return False
 
+
 # --------------------------------------- #
 
-def q2a(char:str) -> int:
+def q2a(char: str) -> int:
     alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
-                 "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", " "]
+                "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", " "]
 
     return alphabet.index(char)
 
-def q2b(name:str) -> str:
+
+def q2b(name: str) -> str:
     alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
                 "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", " "]
 
@@ -50,7 +55,8 @@ def q2b(name:str) -> str:
         ID += str(alphabet.index(i))
     return ID
 
-def q2c(name:str) -> int:
+
+def q2c(name: str) -> int:
     ID = q2b(name)
 
     total = 0
@@ -61,19 +67,15 @@ def q2c(name:str) -> int:
 
 
 def q3a(num):
-    for i in range(1, num+1):
-        is_prime = True
-        for j in range(2, i+1):
-            if i != j and i%j == 0:
-                is_prime = False
-                break
+    if isinstance(num, int) and num >= 2:
+        for i in range(1, num + 1):
+            is_prime = True
+            for j in range(2, i + 1):
+                if i != j and i % j == 0:
+                    is_prime = False
+                    break
 
-        if is_prime:
-            print(i)
-
-print(q3a(100))
-
-
-
-
-
+            if is_prime:
+                print(i)
+    else:
+        print("Incorrect input")
