@@ -1,0 +1,13 @@
+Unit Testing
+Testing the smallest modules in testing
+Building up a suite of test
+
+Integration Testing
+Testing everything as a whole
+
+Test Driven Development
+Write smallest possible test case
+Write the test
+Get the test to pass
+Refactor Code
+Consider edge-cases and write tests for them
