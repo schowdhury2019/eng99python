@@ -30,3 +30,9 @@ class SimpleCalcTest(unittest.TestCase):
         actual = self.calc.divide(15,5)
         expected = (15/5)
         self.assertEqual(expected,actual)
+
+    def test_mult_floats(self):
+        self.assertAlmostEqual(7.85, self.calc.mult(3.14,2.5))
+
+if __name__ == "__main__":
+    unittest.main()
