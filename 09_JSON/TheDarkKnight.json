@@ -1,0 +1,16 @@
+{
+  "Title": "The Dark Knight",
+  "Release Year": 2008,
+  "Director": {
+    "First Name": "Christopher",
+    "Last name": "Nolan"},
+  "Actors": ["Christian Bale", "Heath Ledger", "Morgan Freeman"],
+  "Genre": ["Action", "Thriller", "Crime", "Drama"],
+  "Length": 153.5,
+  "Ratings": {
+    "IMBD": 100,
+    "Rotten Tomatoes": 99,
+    "Movie Critic": 95,
+    "My Mum": 90
+  }
+}

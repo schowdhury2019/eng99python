@@ -1,0 +1,11 @@
+{
+  "String": "Hello, people",
+  "Number": 123,
+  "Other Numbers": 45.234,
+  "Arrays": [1,2,3],
+  "Booleans": true,
+  "Nulls": null,
+  "Objects": {
+    "key": "value"
+  }
+}

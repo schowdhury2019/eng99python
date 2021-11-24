@@ -1,16 +1,35 @@
-# This is a sample Python script.
+a = 5
+b = a
+b += 5
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+
+print(a,b)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+x = [
+    {'item': 'Risotto', 'price': 12.5, 'quantity': 2},
+    {'item': 'Burrito', 'price': 20.43, 'quantity': 4}
+]
+
+print("x: ", x[0])
+
+y = x[0]
+
+y["quantity"] += 10
+
+print("x: ",x[0])
+print("y: ",y)
+
+i = [1,2,3]
+j = i[0]
+
+j += 10
+
+print(i, j)
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    pass
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
