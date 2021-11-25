@@ -1,0 +1,10 @@
+Vagrant and virtualbox
+Linux Bash
+
+Task:
+
+create a postcode class that can hold lat/long and east/north
+for a single postcode
+
+init method that takes the postcode as a string and makes
+api call
